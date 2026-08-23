@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" role="img" aria-label="Wide base, broken middle, occasional tip">
+  <defs>
+    <linearGradient id="bgy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081426"/><stop offset="1" stop-color="#03070f"/>
+    </linearGradient>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd24d"/><stop offset="1" stop-color="#ff9d2e"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38d0ff" stop-opacity=".85"/><stop offset="1" stop-color="#1b7fb8" stop-opacity=".7"/>
+    </linearGradient>
+    <filter id="gy" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .h{font-family:Inter,'Segoe UI',sans-serif;font-weight:900;fill:#ffffff}
+      .n{font-family:Inter,'Segoe UI',sans-serif;font-weight:800;fill:#ffffff;font-size:15px}
+      .s{font-family:Inter,'Segoe UI',sans-serif;font-weight:400;fill:#93b4cf;font-size:12.5px}
+      .num{font-family:Inter,'Segoe UI',sans-serif;font-weight:900;font-size:22px}
+    </style>
+  </defs>
+  <rect width="880" height="560" fill="url(#bgy)"/>
+
+  <text class="h" x="440" y="44" font-size="22" text-anchor="middle">Wide base. Broken middle. Occasional tip.</text>
+  <text class="s" x="440" y="68" text-anchor="middle">The structural shape of Chinese ice hockey</text>
+
+  <!-- TIP -->
+  <path d="M440,104 L494,186 L386,186 Z" fill="url(#tip)" filter="url(#gy)"/>
+  <text class="num" x="628" y="150" fill="#ffd24d">The tip</text>
+  <text class="s" x="628" y="170">National team · NHL draft · the 0.01%</text>
+  <line x1="500" y1="150" x2="618" y2="146" stroke="#ffd24d" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <!-- MIDDLE (broken) -->
+  <!-- left fragment -->
+  <path d="M386,196 L342,300 L392,300 L404,196 Z" fill="#ff3d6e" fill-opacity=".38" stroke="#ff3d6e" stroke-opacity=".65" stroke-width="1.5"/>
+  <!-- right fragment -->
+  <path d="M494,196 L538,300 L488,300 L476,196 Z" fill="#ff3d6e" fill-opacity=".38" stroke="#ff3d6e" stroke-opacity=".65" stroke-width="1.5"/>
+  <!-- the gap: jagged crack -->
+  <path d="M404,196 L440,232 L412,258 L448,290 L416,300 L392,300 Z" fill="#03070f" opacity=".85"/>
+  <path d="M476,196 L440,232 L468,258 L432,290 L464,300 L488,300 Z" fill="#03070f" opacity=".85"/>
+  <path d="M404,196 L440,236 L410,262 L446,294" fill="none" stroke="#ff3d6e" stroke-width="2" stroke-opacity=".8"/>
+  <path d="M476,196 L440,236 L470,262 L434,294" fill="none" stroke="#ff3d6e" stroke-width="2" stroke-opacity=".8"/>
+
+  <text class="num" x="628" y="246" fill="#ff3d6e">The middle</text>
+  <text class="s" x="628" y="266" fill="#ff8098">Ages 14–16 — where the structure fails</text>
+  <text class="s" x="628" y="284" fill="#ff8098">88% quit · no dual-career pathway</text>
+  <line x1="548" y1="250" x2="618" y2="242" stroke="#ff3d6e" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <!-- BASE -->
+  <path d="M300,310 L580,310 L680,438 L200,438 Z" fill="url(#base)"/>
+  <path d="M200,438 L680,438 L680,452 L200,452 Z" fill="#38d0ff" fill-opacity=".28"/>
+
+  <text class="n" x="440" y="358" text-anchor="middle" font-size="17">58,000 registered players</text>
+  <text class="s" x="440" y="382" text-anchor="middle">Grassroots participation after the Olympic push</text>
+  <text class="s" x="440" y="404" text-anchor="middle">104 IIHF-size rinks · 400+ rinks nationwide</text>
+
+  <text class="num" x="152" y="376" fill="#38d0ff" text-anchor="end">The base</text>
+  <text class="s" x="152" y="396" text-anchor="end">Growing fast</text>
+  <line x1="164" y1="372" x2="214" y2="372" stroke="#38d0ff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <!-- the escape route: bypassing the broken middle -->
+  <path d="M300,320 C220,270 240,180 396,176" fill="none" stroke="#4dffd5" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <text class="s" x="196" y="216" fill="#4dffd5" font-weight="700">the international</text>
+  <text class="s" x="196" y="234" fill="#4dffd5" font-weight="700">route — expensive</text>
+
+  <!-- caption -->
+  <text class="s" x="440" y="504" text-anchor="middle">
+    A wider base does not reach the tip if the middle cannot carry it.
+  </text>
+  <text class="s" x="440" y="526" text-anchor="middle" fill="#66839c">
+    Fewer than 2,000 of 58,000 players are still playing after the age of sixteen.
+  </text>
+</svg>

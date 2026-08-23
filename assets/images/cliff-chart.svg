@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Participation rises fiftyfold then collapses after age 16">
+  <defs>
+    <linearGradient id="bgc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081426"/><stop offset="1" stop-color="#03070f"/>
+    </linearGradient>
+    <linearGradient id="riseFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38d0ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#38d0ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="riseLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4dffd5"/><stop offset="1" stop-color="#38d0ff"/>
+    </linearGradient>
+    <filter id="glowC" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .ttl{font-family:Inter,'Segoe UI',sans-serif;font-weight:900;fill:#ffffff}
+      .sub{font-family:Inter,'Segoe UI',sans-serif;font-weight:400;fill:#93b4cf}
+      .ax{font-family:Inter,'Segoe UI',sans-serif;font-weight:600;fill:#7fa0bb;font-size:13px}
+      .big{font-family:Inter,'Segoe UI',sans-serif;font-weight:900}
+    </style>
+  </defs>
+
+  <rect width="960" height="520" fill="url(#bgc)"/>
+  <!-- grid -->
+  <g stroke="#38d0ff" stroke-opacity=".07">
+    <line x1="80" y1="120" x2="900" y2="120"/><line x1="80" y1="200" x2="900" y2="200"/>
+    <line x1="80" y1="280" x2="900" y2="280"/><line x1="80" y1="360" x2="900" y2="360"/>
+  </g>
+
+  <text class="ttl" x="60" y="56" font-size="25">The rise — and the cliff</text>
+  <text class="sub" x="60" y="82" font-size="14">Registered ice hockey participation in China, and what happens at sixteen</text>
+
+  <!-- axis -->
+  <line x1="80" y1="420" x2="900" y2="420" stroke="#38d0ff" stroke-opacity=".3" stroke-width="2"/>
+  <line x1="80" y1="110" x2="80" y2="420" stroke="#38d0ff" stroke-opacity=".2" stroke-width="1.5"/>
+
+  <!-- area under rise -->
+  <path d="M110,405 C260,398 340,350 470,205 C560,140 620,132 700,128 L700,420 L110,420 Z" fill="url(#riseFill)"/>
+  <!-- rise curve -->
+  <path d="M110,405 C260,398 340,350 470,205 C560,140 620,132 700,128"
+        fill="none" stroke="url(#riseLine)" stroke-width="5" stroke-linecap="round" filter="url(#glowC)"/>
+
+  <!-- THE CLIFF: vertical collapse -->
+  <path d="M700,128 L700,392" fill="none" stroke="#ff3d6e" stroke-width="5" stroke-linecap="round"
+        stroke-dasharray="10 9" filter="url(#glowC)"/>
+  <path d="M700,392 C760,394 820,396 890,398" fill="none" stroke="#ff3d6e" stroke-width="4"
+        stroke-linecap="round" opacity=".85"/>
+
+  <!-- markers -->
+  <circle cx="110" cy="405" r="6" fill="#4dffd5"/>
+  <circle cx="700" cy="128" r="8" fill="#38d0ff" filter="url(#glowC)"/>
+  <circle cx="700" cy="392" r="8" fill="#ff3d6e" filter="url(#glowC)"/>
+
+  <!-- labels: before 2015 -->
+  <text class="big" x="110" y="382" font-size="19" fill="#4dffd5" text-anchor="middle">1,000</text>
+  <text class="ax"  x="110" y="446" text-anchor="middle">before 2015</text>
+
+  <!-- label: peak -->
+  <text class="big" x="700" y="104" font-size="30" fill="#ffffff" text-anchor="middle">58,000</text>
+  <text class="ax"  x="700" y="446" text-anchor="middle">2021 · all ages</text>
+
+  <!-- label: after 16 -->
+  <text class="big" x="800" y="378" font-size="22" fill="#ff3d6e">&lt; 2,000</text>
+  <text class="ax"  x="800" y="446">still playing after 16</text>
+
+  <!-- rise annotation -->
+  <g transform="translate(300,168)">
+    <rect x="0" y="-22" width="184" height="34" rx="17" fill="#4dffd5" fill-opacity=".14" stroke="#4dffd5" stroke-opacity=".45"/>
+    <text class="big" x="92" y="2" font-size="15" fill="#7dffe0" text-anchor="middle">×50 in six years</text>
+  </g>
+
+  <!-- cliff annotation -->
+  <g transform="translate(724,236)">
+    <rect x="0" y="-24" width="196" height="38" rx="10" fill="#ff3d6e" fill-opacity=".16" stroke="#ff3d6e" stroke-opacity=".5"/>
+    <text class="big" x="14" y="2" font-size="15" fill="#ff9db0">THE U16 CLIFF</text>
+    <text class="ax"  x="14" y="22" fill="#ff8098">88% of peers quit</text>
+  </g>
+
+  <!-- axis captions -->
+  <text class="ax" x="490" y="490" text-anchor="middle" font-size="12.5" fill="#66839c">
+    Sources: national participation figures (1,000 → 58,000) and youth amateurs above age 16 (&lt; 2,000)
+  </text>
+</svg>

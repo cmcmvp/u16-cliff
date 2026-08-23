@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Legal body contact">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c0c17"/><stop offset="1" stop-color="#12060b"/></linearGradient>
+<radialGradient id="imp" cx=".5" cy=".45" r=".4"><stop offset="0" stop-color="#ff6b81" stop-opacity=".65"/><stop offset="1" stop-color="#ff6b81" stop-opacity="0"/></radialGradient>
+<linearGradient id="ice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cbdcea"/><stop offset="1" stop-color="#eef6fb"/></linearGradient></defs>
+<rect width="1280" height="720" fill="url(#g)"/>
+<rect y="430" width="1280" height="290" fill="url(#ice)" opacity=".92"/>
+<line x1="0" y1="430" x2="1280" y2="430" stroke="#b8cbdc" stroke-width="6"/>
+<ellipse cx="640" cy="330" rx="330" ry="230" fill="url(#imp)"/>
+<g transform="translate(430,236)">
+<path d="M20,96 q46,-52 96,-10 q20,26 8,66 l-10,84 q-4,28 -34,28 l-44,0 q-30,0 -34,-28 l-10,-84 q-12,-44 28,-56Z" fill="#0b2545"/>
+<circle cx="54" cy="56" r="34" fill="#13315c"/><path d="M20,50 a34,34 0 0 1 68,0Z" fill="#9fc4de"/>
+<line x1="120" y1="200" x2="240" y2="250" stroke="#0b2545" stroke-width="13" stroke-linecap="round"/></g>
+<g transform="translate(730,230) scale(-1,1)">
+<path d="M20,96 q46,-52 96,-10 q20,26 8,66 l-10,90 q-4,28 -34,28 l-44,0 q-30,0 -34,-28 l-10,-90 q-12,-44 28,-56Z" fill="#7a1226"/>
+<circle cx="54" cy="56" r="34" fill="#5c0d1c"/><path d="M20,50 a34,34 0 0 1 68,0Z" fill="#ff9db0"/></g>
+<g stroke="#ff6b81" stroke-width="5" opacity=".9"><path d="M600,300 l-44,-30"/><path d="M596,340 l-52,4"/><path d="M604,376 l-46,28"/></g>
+<ellipse cx="960" cy="500" rx="18" ry="9" fill="#0e1116"/>
+<text x="640" y="676" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" fill="#ff8098" letter-spacing="5">CONTACT IS NOW LEGAL</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Draft night">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c2005"/><stop offset="1" stop-color="#140e02"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".2" r=".75"><stop offset="0" stop-color="#ffd24d" stop-opacity=".5"/><stop offset="1" stop-color="#ffd24d" stop-opacity="0"/></radialGradient>
+<linearGradient id="ice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ecf4"/><stop offset="1" stop-color="#fbfdff"/></linearGradient></defs>
+<rect width="1280" height="720" fill="url(#g)"/><ellipse cx="640" cy="110" rx="700" ry="340" fill="url(#glow)"/>
+<g fill="#fff" opacity=".65"><circle cx="180" cy="80" r="4"/><circle cx="360" cy="50" r="3"/><circle cx="620" cy="40" r="3"/><circle cx="900" cy="60" r="4"/><circle cx="1120" cy="90" r="3"/></g>
+<rect y="440" width="1280" height="280" fill="url(#ice)"/>
+<line x1="0" y1="440" x2="1280" y2="440" stroke="#c8d6e2" stroke-width="6"/>
+<line x1="640" y1="440" x2="640" y2="720" stroke="#e6003a" stroke-width="5" opacity=".4"/>
+<rect x="500" y="120" width="280" height="90" rx="10" fill="#171003" stroke="#ffd24d" stroke-width="3"/>
+<text x="640" y="180" text-anchor="middle" font-family="monospace" font-weight="700" font-size="44" fill="#ffd24d">33</text>
+<g transform="translate(560,250)">
+<line x1="34" y1="20" x2="34" y2="-70" stroke="#3a2b08" stroke-width="12" stroke-linecap="round"/>
+<line x1="34" y1="-70" x2="88" y2="-70" stroke="#3a2b08" stroke-width="12" stroke-linecap="round"/>
+<path d="M8,60 q30,-40 62,-8 q16,20 6,48 l-10,70 q-2,20 -24,20 l-30,0 q-22,0 -24,-20 l-10,-70 q-8,-32 30,-40Z" fill="#7a1226"/>
+<circle cx="38" cy="26" r="26" fill="#3a2b08"/><path d="M12,22 a26,26 0 0 1 52,0Z" fill="#ffd24d"/></g>
+<g fill="#ffd24d" opacity=".8"><circle cx="300" cy="300" r="3"/><circle cx="420" cy="250" r="4"/><circle cx="880" cy="270" r="3"/><circle cx="1000" cy="320" r="4"/><circle cx="240" cy="380" r="3"/><circle cx="1060" cy="400" r="3"/></g>
+<text x="640" y="686" text-anchor="middle" font-family="Inter,sans-serif" font-size="21" fill="#e0b93f" letter-spacing="6">DRAFTED 33RD OVERALL</text>
+</svg>

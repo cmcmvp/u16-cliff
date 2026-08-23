@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="An empty rink, one player">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131922"/><stop offset="1" stop-color="#080c12"/></linearGradient>
+<linearGradient id="ice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3d2e0"/><stop offset="1" stop-color="#e9f1f7"/></linearGradient>
+<radialGradient id="one" cx=".62" cy=".62" r=".3"><stop offset="0" stop-color="#9fb3c8" stop-opacity=".5"/><stop offset="1" stop-color="#9fb3c8" stop-opacity="0"/></radialGradient></defs>
+<rect width="1280" height="720" fill="url(#g)"/>
+<rect y="360" width="1280" height="360" fill="url(#ice)" opacity=".85"/>
+<line x1="0" y1="360" x2="1280" y2="360" stroke="#a8bccd" stroke-width="5"/>
+<g fill="#0d131b" opacity=".9"><rect x="0" y="180" width="1280" height="180"/></g>
+<g fill="#1b2530"><g><rect x="40" y="200" width="1200" height="26" rx="6"/><rect x="40" y="250" width="1200" height="26" rx="6"/><rect x="40" y="300" width="1200" height="26" rx="6"/></g></g>
+<ellipse cx="790" cy="560" rx="360" ry="140" fill="url(#one)"/>
+<g transform="translate(760,420)">
+<path d="M14,60 q30,-34 62,-6 q14,18 6,44 l-8,58 q-2,18 -22,18 l-28,0 q-20,0 -22,-18 l-8,-58 q-8,-28 20,-38Z" fill="#25303c"/>
+<circle cx="44" cy="34" r="22" fill="#2f3d4c"/>
+<line x1="86" y1="140" x2="164" y2="176" stroke="#25303c" stroke-width="9" stroke-linecap="round"/></g>
+<ellipse cx="960" cy="600" rx="15" ry="7" fill="#0e1116"/>
+<text x="200" y="256" font-family="Inter,sans-serif" font-size="20" fill="#3d4c5c" letter-spacing="4">EMPTY SEATS</text>
+<text x="640" y="686" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" fill="#6c8096" letter-spacing="5">FIFTEEN PLAYERS IN THE PROVINCE</text>
+</svg>
