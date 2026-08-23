@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Career Simulator — The U16 Cliff</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/game.css" />
+</head>
+<body data-theme="dark">
+
+<div id="scroll-progress"></div>
+<canvas id="fx-canvas"></canvas>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="index.html">🏒 THE U16 CLIFF</a>
+    <button class="navbar-toggle" aria-label="Menu">☰</button>
+    <ul class="navbar-links">
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="timeline.html">Timeline &amp; Data</a></li>
+      <li><a href="policy-research.html">Policy Research</a></li>
+      <li><a href="u16-cliff.html">The U16 Cliff</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="simulator.html">Career Simulator</a></li>
+      <li><a href="proposal.html">Proposal</a></li>
+      <li><a href="outlook.html">Outlook</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ LAUNCH ============ -->
+<section class="section" style="padding-top:70px;padding-bottom:40px;">
+  <div class="container reveal">
+    <div class="section-head" style="margin-bottom:34px;">
+      <span class="eyebrow">05 — Interactive</span>
+      <h2 class="section-title">Live it yourself</h2>
+    </div>
+
+    <div class="launch">
+      <h2>Ice Hockey Career &amp;<br /><span class="hl">Trajectory Simulation</span></h2>
+      <p>
+        All of these career pathways are deliberately designed to reflect real scenarios collected through
+        <strong>150+ global interviews</strong>, questionnaires and chat sessions with hockey players around the world.
+        There are no right or wrong choices — just go with your gut.
+      </p>
+      <p style="color:#8fb3cf;">
+        You are born in China, where ice hockey is nowhere near as popular as in Northern Europe or North America.
+        Spend 10 talent points, then survive the <strong style="color:#38d0ff;">U16 Cliff</strong>.
+        Once you quit hockey, you are out.
+      </p>
+      <div class="meta">
+        <span>⏱️ 5–8 minutes</span>
+        <span>🎯 10 talent points</span>
+        <span>🎲 9 rounds, ages 0–18</span>
+        <span>🏆 18 endings</span>
+        <span>🖥️ Full screen</span>
+      </div>
+      <button class="btn big" id="sim-launch">▶ Enter the simulation</button>
+      <p style="margin-top:18px;color:#7fa0bb;font-size:14px;">
+        Keyboard supported — <b>A/B/C</b> to choose, <b>Enter</b> to continue, <b>Esc</b> to exit.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY A GAME ============ -->
+<section class="section" id="why">
+  <div class="container reveal">
+    <div class="section-head">
+      <span class="eyebrow">Design notes</span>
+      <h2 class="section-title">Why a simulation?</h2>
+    </div>
+
+    <div class="narrow prose">
+      <p>
+        A research paper can state that <em>"academic pressure causes a 16-year-old dropout cliff"</em>. It is much harder to convey what it feels like to be the person making that decision — with a coach on one side, a principal on the other, and a family budget that does not stretch.
+      </p>
+      <p>
+        Every round in this simulation is drawn from a real scenario reported in the interviews: the cost of the first pair of skates, the teacher's phone call, the province with fifteen players in your age group, the contract that overlaps with school hours. The hidden rules matter too — <strong>if you spent nothing on family background, the game ends the moment you are born</strong>, because for a great many children in southern provinces, it effectively does.
+      </p>
+      <p>
+        Most endings are losses. That is not pessimism; it is the participation data. Fewer than 2,000 of 58,000 players are still going after sixteen.
+      </p>
+    </div>
+
+    <div class="grid c3" style="margin-top:34px;">
+      <div class="card reveal" data-stagger>
+        <h3>🎯 Talents that actually matter</h3>
+        <p>Family background, mental resilience and physical toughness carry real thresholds. The other four traits are offered — and, deliberately, change nothing.</p>
+      </div>
+      <div class="card reveal" data-stagger>
+        <h3>🚪 Doors that close</h3>
+        <p>Quit once and the run is over. There is no rewind, because in a talent pool this small there rarely is one.</p>
+      </div>
+      <div class="card reveal" data-stagger>
+        <h3>🔬 Endings tied to findings</h3>
+        <p>Each ending closes with the research finding it illustrates, so the story stays connected to the evidence.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a class="btn ghost" href="proposal.html">Read what should change →</a>
+    </div>
+  </div>
+</section>
+
+<div class="page-nav">
+  <a href="u16-cliff.html"><div class="dir">Previous</div><div class="ttl">← The U16 Cliff</div></a>
+  <a class="next" href="proposal.html"><div class="dir">Next</div><div class="ttl">Policy Proposal →</div></a>
+</div>
+
+<footer class="footer"><p>© 2026 Ice Hockey Social &amp; Educational Research Project</p></footer>
+
+<button id="to-top" aria-label="Back to top">↑</button>
+
+<!-- ============ FULL-SCREEN SIMULATOR ============ -->
+<div id="sim" data-tone="cold" role="dialog" aria-label="Career simulator">
+  <div class="sim-bg"></div>
+  <!-- Scene artwork: swap in a photo by dropping the same filename as .jpg
+       into assets/images/scenes/ (e.g. cliff.jpg overrides cliff.svg) -->
+  <div class="sim-art"><img id="sim-img" alt="" /></div>
+  <canvas id="sim-particles"></canvas>
+
+  <div class="sim-hud">
+    <div class="sim-hud-left">
+      <span class="sim-age" id="sim-age"></span>
+      <span class="sim-round" id="sim-round"></span>
+    </div>
+    <div class="sim-hud-right">
+      <div class="sim-rail" id="sim-rail"></div>
+      <button class="sim-icon-btn" id="sim-fs" title="Toggle full screen">⛶</button>
+      <button class="sim-icon-btn" id="sim-exit" title="Exit (Esc)">✕</button>
+    </div>
+  </div>
+
+  <div class="sim-scroll">
+    <div class="sim-stage" id="sim-stage"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

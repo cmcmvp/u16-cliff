@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Interviews — The U16 Cliff</title>
+<meta name="description" content="Global interviews with hockey players and student-athletes across China, North America and Japan." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="midnight">
+
+<div id="scroll-progress"></div>
+<canvas id="fx-canvas"></canvas>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="index.html">🏒 THE U16 CLIFF</a>
+    <button class="navbar-toggle" aria-label="Menu">☰</button>
+    <ul class="navbar-links">
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="timeline.html">Timeline &amp; Data</a></li>
+      <li><a href="policy-research.html">Policy Research</a></li>
+      <li><a href="u16-cliff.html">The U16 Cliff</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="simulator.html">Career Simulator</a></li>
+      <li><a href="proposal.html">Proposal</a></li>
+      <li><a href="outlook.html">Outlook</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section" style="padding-bottom:30px;">
+  <div class="container reveal">
+    <div class="section-head" style="margin-bottom:22px;">
+      <span class="eyebrow">Primary evidence</span>
+      <h2 class="section-title">The <span class="grad">interviews</span></h2>
+      <p class="section-subtitle">
+        Conversations with players and student-athletes across China, North America and Japan
+      </p>
+    </div>
+
+    <div class="narrow">
+      <div class="callout">
+        These recordings are the primary evidence behind the analysis. Click any thumbnail to play —
+        the player only loads when you ask for it, so the page stays fast.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY (rendered from js/interviews.js) ============ -->
+<section class="section" id="all" style="padding-top:10px;">
+  <div class="container">
+    <div data-interviews="all"></div>
+
+    <div class="narrow" style="margin-top:40px;">
+      <div class="callout">
+        📺 Full playlist and further clips are on the project channel —
+        <a class="inline" href="#" id="yt-channel">open the YouTube channel ↗</a>.
+        <br /><span style="font-size:13px;color:var(--dim);">
+          Replace this link's <code>href</code> in <code>interviews.html</code> with your channel URL.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHERE THEY APPEAR ============ -->
+<section class="section" id="where">
+  <div class="container reveal">
+    <div class="section-head">
+      <span class="eyebrow">How the evidence is used</span>
+      <h2 class="section-title">Where each clip appears</h2>
+      <p class="section-subtitle">Interviews are cited at the point they support an argument</p>
+    </div>
+
+    <div class="grid c3">
+      <a class="card reveal" data-stagger href="u16-cliff.html#surface">
+        <h3>🌍 Surface level</h3>
+        <p>How hockey fits into school life abroad, and the "small circle" that players describe in China.</p>
+      </a>
+      <a class="card reveal" data-stagger href="u16-cliff.html#deep">
+        <h3>🏛️ Deep level</h3>
+        <p>Tiered leagues and the NCAA pathway, versus closed-door provincial training.</p>
+      </a>
+      <a class="card reveal" data-stagger href="proposal.html#p3">
+        <h3>🎓 Proposal</h3>
+        <p>Coaching pedagogy, and what isolation after sixteen pushes players to do.</p>
+      </a>
+    </div>
+
+    <div class="narrow" style="margin-top:34px;">
+      <div class="callout">
+        <strong>To place a clip inside the analysis:</strong> open <code>js/interviews.js</code>,
+        find that person, and add a topic tag to their <code>topics</code> list —
+        for example <code>topics: ["surface-china"]</code>. The clip then appears in that
+        section automatically. All available tags are listed at the top of the file.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="page-nav">
+  <a href="u16-cliff.html"><div class="dir">Previous</div><div class="ttl">← The U16 Cliff</div></a>
+  <a class="next" href="simulator.html"><div class="dir">Next</div><div class="ttl">Career Simulator →</div></a>
+</div>
+
+<footer class="footer"><p>© 2026 Ice Hockey Social &amp; Educational Research Project</p></footer>
+
+<button id="to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/interviews.js"></script>
+</body>
+</html>
