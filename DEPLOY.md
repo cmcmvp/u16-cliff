@@ -16,7 +16,7 @@
 
 - [ ] 八个页面导航都能点开
 - [ ] **Interviews 页**：8 个视频封面都显示，点击能播放
-- [ ] **The U16 Cliff 页**：Jiayi Liu 的视频出现在 "Deep level" 那一节
+- [ ] **Why They Stop at Sixteen 页**：Jiayi Liu 的视频出现在 "Deep level" 那一节
 - [ ] **Career Simulator**：点 "Enter the simulation" 能进全屏，照片背景正常
 - [ ] 图表条形在滚动到时会生长
 - [ ] 手机尺寸下（浏览器窄窗口）导航变成 ☰ 汉堡菜单
@@ -36,7 +36,7 @@
 
 1. 登录后点右上角 **＋** → **New repository**
 2. 填写：
-   - **Repository name**：`u16-cliff`（或你喜欢的名字，建议全小写、用连字符）
+   - **Repository name**：`on-the-thin-ice`（或你喜欢的名字，建议全小写、用连字符）
    - **Public** ← 必须选 Public，Pages 免费版才能公开访问
    - 下面的 "Add a README" **不要勾**
 3. 点 **Create repository**
@@ -62,9 +62,9 @@
 cd "D:\OneDrive\学习资料\软件\网页\刘逸舟\hockey-research-en"
 git init
 git add .
-git commit -m "Ice hockey research project website"
+git commit -m "On the Thin ice website"
 git branch -M main
-git remote add origin https://github.com/你的用户名/u16-cliff.git
+git remote add origin https://github.com/你的用户名/on-the-thin-ice.git
 git push -u origin main
 ```
 
@@ -81,7 +81,7 @@ git push -u origin main
 等 **1–3 分钟**，刷新这个页面，上方会出现绿色提示和你的网址：
 
 ```
-https://你的用户名.github.io/u16-cliff/
+https://你的用户名.github.io/on-the-thin-ice/
 ```
 
 **这个网址任何人都能打开**，微信、邮件里发都行。

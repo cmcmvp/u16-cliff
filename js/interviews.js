@@ -10,10 +10,10 @@
      country  — shown as a small flag-style tag
      summary  — one sentence on what the clip covers
      topics   — WHERE the clip appears in the site. Use any of:
-                  "surface-powerhouse"  → U16 Cliff · hockey inside school life abroad
-                  "surface-china"       → U16 Cliff · the "small circle" in China
-                  "deep-powerhouse"     → U16 Cliff · tiered leagues / NCAA pathway
-                  "deep-china"          → U16 Cliff · closed-door training
+                  "surface-powerhouse"  → Analysis · hockey inside school life abroad
+                  "surface-china"       → Analysis · the "small circle" in China
+                  "deep-powerhouse"     → Analysis · tiered leagues / NCAA pathway
+                  "deep-china"          → Analysis · closed-door training
                   "practice2-abroad"    → Proposal · isolation & leaving to play abroad
                   "practice3-coaching"  → Proposal · coaching pedagogy
                 A clip can carry several topics, or none (gallery only).

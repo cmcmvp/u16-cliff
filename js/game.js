@@ -1,5 +1,5 @@
 /* ============================================================
-   game.js — "THE U16 CLIFF" Career & Trajectory Simulator
+   game.js — "On the Thin ice" Career & Trajectory Simulator
    Built strictly from the Ice Hockey Game Design document.
    ------------------------------------------------------------
    FLOW
@@ -99,7 +99,7 @@
     "Round 4 — Outcome":         "lonely",
     "Round 5 — The Crackdown":   "classroom",
     "Round 5 — Outcome":         "graduation",
-    "Round 6 — THE U16 CLIFF":   "cliff",
+    "Round 6 — THE TURNING POINT": "cliff",
     "Round 6 — Outcome":         "closeddoor",
     "Round 6 — The Money":       "airport",
     "Round 7 — Culture Shock":   "lockerroom",
@@ -392,7 +392,7 @@
     hud("", "Introduction", -1);
     paint(
       '<div class="sim-kicker">Ice Hockey Career &amp; Trajectory Simulation</div>' +
-      '<h2 class="sim-title">Can you survive<br />the <span class="hl">U16 Cliff</span>?</h2>' +
+      '<h2 class="sim-title">Can you stay<br /><span class="hl">on the ice</span>?</h2>' +
       '<p class="sim-text" id="t-main"></p><div id="t-rest"></div>',
       function (scr) {
         typeOut(scr.querySelector("#t-main"),
@@ -421,7 +421,7 @@
       text: "This game is built on 150+ global interviews, questionnaires and chat sessions. Every choice you make changes the result.",
       details: [
         "Remember: you are born in a country where ice hockey is nowhere near as popular as it is in Northern Europe or North America.",
-        "Your goal is to keep hockey in your life — as a profession or as a passion — by surviving the “U16 Cliff”.",
+        "Your goal is to keep hockey in your life — as a profession or as a passion — when school and sport begin to pull you in different directions.",
         "Once you quit hockey, you are out. There is no coming back.",
         "It is genuinely, deliberately hard to survive. Do your best."
       ],
@@ -775,7 +775,7 @@
               id: "e_abacus", tone: "grey", verdict: "over", badge: "Game Over",
               title: "You become a boring accountant.",
               text: "You are very good with numbers. You are also finished with hockey at ten years old.",
-              details: ["The U16 cliff claims you early — six years early."],
+              details: ["You leave the ice early — six years before the turning point at sixteen."],
               research: "78% of survey respondents named school work and lack of free time as the primary factor limiting participation. For many, the cliff begins long before sixteen.",
               age: "Age 10"
             });
@@ -988,7 +988,7 @@
               title: "You never touch the ice again.",
               text: "You get into a good high school. That is the whole of it.",
               details: ["Your skates stay in the cupboard until your mother finally gives them away.", "Game over."],
-              research: "The binary choice at fourteen is the mechanism of the U16 Cliff: the system offers no way to be a student and an athlete at once.",
+              research: "The binary choice at fourteen shows how early the problem can begin: the system offers no way to be a student and an athlete at once.",
               age: "Age 14"
             });
           } },
@@ -1039,13 +1039,13 @@
   }
 
   /* ============================================================
-     ROUND 6 — AGE 16, THE U16 CLIFF
+     ROUND 6 — AGE 16, THE TURNING POINT
      ============================================================ */
   function round6() {
     narrate({
-      tone: "fail", age: "Age 16", round: "Round 6 — THE U16 CLIFF", idx: 6,
+      tone: "fail", age: "Age 16", round: "Round 6 — THE TURNING POINT", idx: 6,
       kicker: "Round 6",
-      title: 'This is it. <span class="hl">The Cliff.</span>',
+      title: 'This is it. <span class="hl">The Turning Point.</span>',
       text: "You are sixteen. 88% of your peers have already quit.",
       details: [
         "The academic pressure is a tsunami.",
@@ -1058,7 +1058,7 @@
 
   function round6Choice() {
     ask({
-      tone: "fail", age: "Age 16", round: "Round 6 — THE U16 CLIFF", idx: 6,
+      tone: "fail", age: "Age 16", round: "Round 6 — THE TURNING POINT", idx: 6,
       kicker: "Round 6",
       title: "Which path do you take?",
       prompt: "Three paths",
@@ -1255,7 +1255,7 @@
                   text: "You walk onto the ice in an NHL jersey. Your family is crying in the stands.",
                   details: [
                     "The Chinese media calls you a hero.",
-                    "You proved the U16 Cliff is scalable — if you have money, connections, and immense psychological resilience.",
+                    "You stayed in hockey through the turning point at sixteen — with money, connections, and immense psychological resilience.",
                     "You are the 0.01%."
                   ],
                   research: "Mirrors reality: in 2025 an 18-year-old Beijing native was drafted 33rd overall by the San Jose Sharks — the highest selection for a Chinese player in NHL history. One success does not resolve a structural problem.",
@@ -1272,7 +1272,7 @@
                     "You graduate with a degree and a career in sports management.",
                     "You successfully integrated sport and academics — the thing the system back home could not offer you."
                   ],
-                  research: "The dual-career outcome this research argues for. In the NCAA model athletic excellence becomes an asset for admission rather than a liability — the structural fix for the U16 Cliff.",
+                  research: "The dual-career outcome this research argues for. In the NCAA model athletic excellence becomes an asset for admission rather than a liability — one way to keep players in education and hockey.",
                   age: "Age 22"
                 });
               } }
