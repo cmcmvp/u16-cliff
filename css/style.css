@@ -394,6 +394,11 @@ a.inline:hover { border-bottom-color: var(--ice); }
 .video-meta .name { font-weight: 800; color: var(--text); font-size: 16.5px; }
 .video-meta .role { color: var(--ice); font-size: 13px; margin-top: 4px; font-weight: 700; }
 .video-meta .desc { font-size: 14.5px; margin-top: 10px; color: var(--muted); }
+.iv-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin: 14px 0 0; }
+.iv-fact { min-width: 0; padding: 9px 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--panel); }
+.iv-fact dt { color: var(--dim); font-size: 11px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; }
+.iv-fact dd { margin: 3px 0 0; color: var(--text); font-size: 13.5px; line-height: 1.4; overflow-wrap: anywhere; }
+@media (max-width: 480px) { .iv-facts { grid-template-columns: 1fr; } }
 
 /* ---------- Interview cards (click-to-play YouTube facade) ---------- */
 .iv-card { padding: 0; }

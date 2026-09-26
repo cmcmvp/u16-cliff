@@ -7,8 +7,9 @@
 
    HOW TO EDIT
      role     — what this person is / does  (shown under the name)
-     country  — shown as a small flag-style tag
-     summary  — one sentence on what the clip covers
+     country  — school/team location(s), not nationality; shown as a tag
+     profile  — verified school, age, team, level and position details
+     summary  — one sentence on what the clip covers, when stated
      topics   — WHERE the clip appears in the site. Use any of:
                   "surface-powerhouse"  → Analysis · hockey inside school life abroad
                   "surface-china"       → Analysis · the "small circle" in China
@@ -18,73 +19,113 @@
                   "practice3-coaching"  → Proposal · coaching pedagogy
                 A clip can carry several topics, or none (gallery only).
 
-   ⚠️ role / country / summary are intentionally left blank where the
-   research paper does not state them. Fill them in so the site does
-   not attribute claims to people who did not make them.
+   Profiles are transcribed from the videos' covers and descriptions.
+   Ages refer to the time of recording; unstated details are omitted.
    ============================================================ */
 
 window.INTERVIEWS = [
   {
-    name: "Jiayi Liu",
+    name: "Jiayi (Ethan) Liu",
     ytid: "TSW_PfrhLPM",
-    role: "Student-athlete, Kuper Academy",
+    role: "Kuper Academy varsity hockey captain",
     country: "Canada",
-    summary: "On Canada's tiered Minor Hockey Associations — house league through to AAA — and why nobody has to quit playing in order to keep studying.",
+    profile: [
+      ["School", "Kuper Academy, Montreal"],
+      ["Team", "Varsity hockey (captain)"],
+      ["Position", "Defence"]
+    ],
+    summary: "On Canada's tiered minor hockey pathways and combining school with the sport.",
     topics: ["deep-powerhouse"]
   },
   {
     name: "Alexander",
     ytid: "TR3SNra9xjQ",
-    role: "",
-    country: "",
-    summary: "",
+    role: "Beijing U18 hockey player",
+    country: "China",
+    profile: [
+      ["Level", "U18"],
+      ["Team", "Beijing team"]
+    ],
+    summary: "On the hockey community in China.",
     topics: []
   },
   {
     name: "Aryton Shi",
     ytid: "FjcXK1eg-EE",
-    role: "",
-    country: "",
+    role: "The Hill School student-athlete",
+    country: "US / China",
+    profile: [
+      ["School", "The Hill School"],
+      ["Hockey team", "Beijing team"],
+      ["Other sport", "Lacrosse national team"]
+    ],
     summary: "",
     topics: []
   },
   {
     name: "Binzer",
     ytid: "0u4xgexbSWg",
-    role: "",
-    country: "",
+    role: "China U18 youth hockey defenceman",
+    country: "China",
+    profile: [
+      ["School", "School of 101"],
+      ["Team", "China U18 youth national team"],
+      ["Position", "Defence"]
+    ],
     summary: "",
     topics: []
   },
   {
     name: "Florian Gao",
     ytid: "uMNyxyujloQ",
-    role: "",
-    country: "",
+    role: "Kent School junior and hockey player",
+    country: "US / China",
+    profile: [
+      ["School", "Kent School, Connecticut"],
+      ["School year", "Junior"],
+      ["Teams", "Hong Kong and Beijing hockey teams"]
+    ],
     summary: "",
     topics: []
   },
   {
     name: "Haoge Shi",
     ytid: "fLZUQWR4fVk",
-    role: "",
-    country: "",
+    role: "BNDS varsity hockey player",
+    country: "China",
+    profile: [
+      ["School", "BNDS International Department"],
+      ["Age at interview", "17"],
+      ["Teams", "BNDS varsity; Beijing team; China U18 youth national team"]
+    ],
     summary: "",
     topics: []
   },
   {
     name: "Jiahao Bai",
     ytid: "uRiB90M9SjA",
-    role: "",
-    country: "",
+    role: "Beijing ice hockey defenceman",
+    country: "China",
+    profile: [
+      ["Team", "Beijing ice hockey team"],
+      ["Position", "Defence"]
+    ],
     summary: "",
     topics: []
   },
   {
-    name: "Kinno",
+    name: "Kinno Zhou",
     ytid: "3HNLKyD8_MU",
-    role: "",
-    country: "",
+    role: "Lovell Hockey Academy 16U right wing",
+    country: "US",
+    profile: [
+      ["School", "Lovell Hockey Academy"],
+      ["Age at interview", "15"],
+      ["School year", "Sophomore"],
+      ["Team level", "16U"],
+      ["Position", "Right wing"],
+      ["Goal", "NCAA hockey"]
+    ],
     summary: "",
     topics: []
   }
@@ -104,8 +145,11 @@ window.INTERVIEWS = [
   }
 
   function card(v) {
-    const role = v.role || "Role to be added";
+    const role = v.role || "Interviewee";
     const tags = v.country ? '<span class="iv-flag">' + esc(v.country) + "</span>" : "";
+    const facts = (v.profile || []).map(function (fact) {
+      return '<div class="iv-fact"><dt>' + esc(fact[0]) + '</dt><dd>' + esc(fact[1]) + '</dd></div>';
+    }).join("");
     return (
       '<div class="card video-card iv-card reveal" data-stagger>' +
         '<button class="iv-play" data-yt="' + esc(v.ytid) + '" ' +
@@ -120,6 +164,7 @@ window.INTERVIEWS = [
         '<div class="video-meta">' +
           '<div class="name">' + esc(v.name) + " " + tags + "</div>" +
           '<div class="role">' + esc(role) + "</div>" +
+          (facts ? '<dl class="iv-facts">' + facts + '</dl>' : "") +
           (v.summary ? '<div class="desc">' + esc(v.summary) + "</div>" : "") +
           '<a class="iv-link" href="https://www.youtube.com/watch?v=' + esc(v.ytid) + '" ' +
              'target="_blank" rel="noopener">Open on YouTube ↗</a>' +
@@ -147,7 +192,7 @@ window.INTERVIEWS = [
     });
   }
 
-  // filename-safe slug, e.g. "Jiayi Liu" → "jiayi-liu"
+  // filename-safe slug, e.g. "Kinno Zhou" → "kinno-zhou"
   function slug(s) {
     return String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }

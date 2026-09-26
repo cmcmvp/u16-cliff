@@ -62,7 +62,7 @@
 cd "D:\OneDrive\学习资料\软件\网页\刘逸舟\hockey-research-en"
 git init
 git add .
-git commit -m "On the Thin ice website"
+git commit -m "On the Thin Ice website"
 git branch -M main
 git remote add origin https://github.com/你的用户名/on-the-thin-ice.git
 git push -u origin main

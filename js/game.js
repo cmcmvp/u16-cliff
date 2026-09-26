@@ -1,5 +1,5 @@
 /* ============================================================
-   game.js — "On the Thin ice" Career & Trajectory Simulator
+   game.js — "On the Thin Ice" Career & Trajectory Simulator
    Built strictly from the Ice Hockey Game Design document.
    ------------------------------------------------------------
    FLOW
@@ -418,7 +418,7 @@
       tone: "cold", age: "", round: "Briefing", idx: -1,
       kicker: "Before you begin",
       title: 'You were born in <span class="hl">China</span>.',
-      text: "This game is built on 150+ global interviews, questionnaires and chat sessions. Every choice you make changes the result.",
+      text: "This game is built on over 20 global interviews, questionnaires and chat sessions. Every choice you make changes the result.",
       details: [
         "Remember: you are born in a country where ice hockey is nowhere near as popular as it is in Northern Europe or North America.",
         "Your goal is to keep hockey in your life — as a profession or as a passion — when school and sport begin to pull you in different directions.",
