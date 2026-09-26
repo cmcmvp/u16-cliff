@@ -16,7 +16,7 @@
 
 - [ ] 八个页面导航都能点开
 - [ ] **Interviews 页**：8 个视频封面都显示，点击能播放
-- [ ] **Why They Stop at Sixteen 页**：Jiayi Liu 的视频出现在 "Deep level" 那一节
+- [ ] **Analysis 页**：Jiayi Liu 的视频出现在 "Deep level" 那一节
 - [ ] **Career Simulator**：点 "Enter the simulation" 能进全屏，照片背景正常
 - [ ] 图表条形在滚动到时会生长
 - [ ] 手机尺寸下（浏览器窄窗口）导航变成 ☰ 汉堡菜单
